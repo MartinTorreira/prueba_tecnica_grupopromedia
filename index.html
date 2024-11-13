@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="montserrat-black-900">Contacta con nosotros</h2>
+        <form id="contactForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Nombre *" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email *" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Teléfono">
+                    <span id="phoneError" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Asunto">
+                    <span id="subjectError" class="error-message"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Comentarios *" required></textarea>
+            </div>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                <label for="privacyPolicy">He leído la <strong>política de privacidad</strong></label>
+            </div>
+
+            <button type="submit">Enviar</button>
+            <p id="statusMessage"></p>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

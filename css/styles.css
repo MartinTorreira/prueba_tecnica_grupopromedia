@@ -1,0 +1,149 @@
+.montserrat-black-900 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.montserrat-medium {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #1e293b;
+}
+
+.form-container {
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 80px;
+}
+
+h2 {
+    text-align: left;
+    
+    margin-bottom: 42px;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 10px;
+    column-gap: 30px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+input, textarea {
+    width: calc(100% - 20px); 
+    padding: 16px;
+    border: 1px solid #f6f6f6;
+    border-radius: 12px;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+textarea {
+    height: 100px;
+    resize: none; 
+}
+
+input::placeholder, textarea::placeholder {
+    color: #6c757d;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.checkbox-container {
+    display: flex;              
+    font-size: small;
+    width: max-content;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 4px;
+}
+
+
+input[type='checkbox'] {
+    height: 10px;
+    border: 1px solid #f6f6f6;
+    padding: 6px;
+    padding-top: 6px;
+    
+    background: #FFF;
+    border: 1px solid #d5d5d6;
+    outline: none;
+    color: #96999D;
+    
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 4px;
+    transition: all 0.15s;
+  }
+  
+  input[type=checkbox]:focus {
+    border-color: #ACACB8;
+    color: #2E3236;
+  }
+
+input[type=checkbox]:checked {
+    background-color: #0a8eb3;
+}
+ 
+
+button {
+    width: fit-content;
+    padding: 12px;
+    padding-inline: 25px;
+    background-color: #0a8eb3;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+button.montserrat-medium {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #0a8eb3;
+}
+
+#statusMessage {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+}
+
+strong {
+    color: #0a8eb3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
