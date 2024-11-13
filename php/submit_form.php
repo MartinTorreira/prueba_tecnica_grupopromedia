@@ -5,6 +5,8 @@ header("Access-Control-Allow-Headers: Content-Type");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
+
+// Create connection to database
 $servername = "localhost";
 $username = "martin";
 $password = "";

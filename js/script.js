@@ -8,13 +8,13 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const phone = document.getElementById('phone').value.trim();
     const privacyPolicy = document.getElementById('privacyPolicy').checked;
 
-    // Limpiar los mensajes de error previos
+    // Clean error messages
     document.getElementById('phoneError').style.display = 'none';
     document.getElementById('subjectError').style.display = 'none';
 
     let valid = true;
 
-    // Validación de teléfono (9 números)
+    // Phone validation
     const phonePattern = /^\d{9}$/; 
     if (phone && !phonePattern.test(phone)) {
         document.getElementById('phoneError').textContent = 'El teléfono debe tener 9 dígitos';
@@ -22,14 +22,14 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         valid = false;
     }
 
-    // Validación de asunto (Ahora es opcional)
+    // Subject validation
     if (subject && subject.trim() === "") {
         document.getElementById('subjectError').textContent = 'El asunto no puede estar vacío si se proporciona.';
         document.getElementById('subjectError').style.display = 'block';
         valid = false;
     }
 
-    // Validar campos obligatorios
+    // Required fields
     if (!name || !email || !message || !privacyPolicy) {
         alert('Por favor, rellena todos los campos obligatorios y acepta la política de privacidad.');
         valid = false;
@@ -51,7 +51,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
             statusMessage.style.color = 'green';
         } else {
             statusMessage.textContent = 'Hubo un error al enviar el formulario.';
-            statusMessage.style.color = 'red';
         }
     })
     .catch(error => {
